@@ -78,3 +78,25 @@ p{
 .x a{
     padding: 5vh 5vw;
 }
+a{
+    color: #f394be;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color: #ee4545;
+    transition: .5s;
+}
+.x a::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background:#ee4545;;
+	display: block;
+	margin: auto;
+	transition: .5s;
+}
+.x a:hover::after{
+	width: 100%;
+    margin: auto;
+}
